@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             listView01 = findViewById(R.id.listView1);
             listView01.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, daftar));
             listView01.setSelected(true);
+
             listView01.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View arg1, int arg2, long agr3) {
@@ -94,6 +95,6 @@ public class MainActivity extends AppCompatActivity {
                     });
                     builder.create().show();
                 }});
-            ((ArrayAdapter)listView01.getAdapter()).notifyDataSetInvalidated();
+            ((ArrayAdapter<?>)listView01.getAdapter()).notifyDataSetInvalidated();
         }
     }
