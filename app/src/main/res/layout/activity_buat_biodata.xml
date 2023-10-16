@@ -15,7 +15,7 @@
         android:text="Nomor"
         android:textSize="15sp"/>
     <EditText
-        android:id="@+id/tfNo"
+        android:id="@+id/etNo"
         android:layout_below="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -26,13 +26,13 @@
     <TextView
         android:id="@+id/tv2"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/tfNo"
+        android:layout_below="@id/etNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nama"
         android:textSize="15sp"/>
     <EditText
-        android:id="@+id/tfNama"
+        android:id="@+id/etNama"
         android:layout_below="@+id/tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -41,13 +41,13 @@
     <TextView
         android:id="@+id/tv3"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/tfNama"
+        android:layout_below="@id/etNama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tanggal Lahir"
         android:textSize="15sp"/>
     <EditText
-        android:id="@+id/tfTglLahir"
+        android:id="@+id/etLahir"
         android:layout_below="@+id/tv3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -56,7 +56,7 @@
     <TextView
         android:id="@+id/tv4"
         android:layout_marginTop="10dp"
-        android:layout_below="@id/tfTglLahir"
+        android:layout_below="@id/etLahir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Jenis Kelamin"
@@ -97,7 +97,7 @@
         android:text="Alamat"
         android:textSize="15sp"/>
     <EditText
-        android:id="@+id/tfAlamat"
+        android:id="@+id/etAlamat"
         android:layout_below="@+id/tv5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
