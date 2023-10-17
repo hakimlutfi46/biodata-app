@@ -29,4 +29,21 @@ public class DataHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
+
+    public void insertData(String no, String nama, String tlahir, String jk, String alamat) {
+        SQLiteDatabase db = this.getWritableDatabase(); // Mendapatkan referensi ke database untuk menulis data.
+
+        // Membuat perintah SQL INSERT sesuai dengan data yang diterima.
+        String sql = "INSERT INTO biodata (no, nama, tgl, jk, alamat) VALUES (?, ?, ?, ?, ?)";
+        Object[] bindArgs = {no, nama, tlahir, jk, alamat};
+
+        try {
+            db.execSQL(sql, bindArgs); // Mengeksekusi perintah SQL dengan data yang diterima.
+        } catch (Exception e) {
+            Log.e("DataHelper", "Error inserting data: " + e.getMessage());
+        }
+
+        db.close(); // Tutup koneksi database setelah selesai.
+    }
+
 }

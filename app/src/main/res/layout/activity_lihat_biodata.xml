@@ -5,113 +5,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LihatBiodata"
-    android:padding="20dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="20dp"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    android:layout_marginHorizontal="30dp"
+    tools:context=".LihatBiodata">
 
-   <LinearLayout
-       android:id="@+id/lyLabel"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="vertical"
-       android:layout_weight="1">
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_person_pin_24"/>
 
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="No"
-           android:textSize="16sp"
-           android:layout_marginBottom="10dp"
-           />
-
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Nama"
-           android:textSize="16sp"
-           android:layout_marginBottom="10dp"
-           />
-
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Tanggal Lahir"
-           android:textSize="16sp"
-           android:layout_marginBottom="10dp"
-           />
-
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Jenis Kelamin"
-           android:textSize="16sp"
-           android:layout_marginBottom="10dp"
-           />
-
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Alamat"
-           android:textSize="16sp"
-           android:layout_marginBottom="10dp"
-           />
-
-   </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/lySetTv"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:text="NIM"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/txt_nim"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"/>
 
-        <TextView
-            android:id="@+id/tvNo"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/txt_nama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Lahir"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/editText_tglLahir"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="date"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textSize="15sp"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <RadioButton
+            android:id="@+id/radioButtonLaki"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="123"
-            android:textSize="16sp"
-            android:layout_marginBottom="10dp"
-            />
+            android:layout_height="35dp"
+            android:text="Laki - Laki"
+            android:layout_marginRight="20dp"
+            android:enabled="false"/>
 
-        <TextView
-            android:id="@+id/tvNama"
+        <RadioButton
+            android:id="@+id/radioButtonPerempuan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lutfi Hakim"
-            android:textSize="16sp"
-            android:layout_marginBottom="10dp"
-            />
+            android:layout_height="35dp"
+            android:text="Perempuan"
+            android:enabled="false"/>
+    </RadioGroup>
 
-        <TextView
-            android:id="@+id/tvTglLahir"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="16/06/03"
-            android:textSize="16sp"
-            android:layout_marginBottom="10dp"
-            />
-
-        <TextView
-            android:id="@+id/tvJK"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Laki-Laki"
-            android:textSize="16sp"
-            android:layout_marginBottom="10dp"
-            />
-
-        <TextView
-            android:id="@+id/tvAlamat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Jl. Jalan"
-            android:textSize="16sp"
-            android:layout_marginBottom="10dp"
-            />
-
-    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:textSize="15sp"/>
+    <EditText
+        android:id="@+id/txt_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"/>
 
 </LinearLayout>

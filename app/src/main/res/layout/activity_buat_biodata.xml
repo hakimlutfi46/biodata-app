@@ -13,12 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nomor"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"/>
     <EditText
         android:id="@+id/etNo"
         android:layout_below="@+id/tv1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular">
         <requestFocus/>
     </EditText>
 
@@ -30,12 +32,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nama"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"/>
     <EditText
         android:id="@+id/etNama"
         android:layout_below="@+id/tv2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular">
     </EditText>
 
     <TextView
@@ -45,12 +49,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tanggal Lahir"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"/>
     <EditText
         android:id="@+id/etLahir"
         android:layout_below="@+id/tv3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular">
     </EditText>
 
     <TextView
@@ -60,7 +66,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Jenis Kelamin"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"/>
     <RadioGroup
         android:id="@+id/radioGroup1"
         android:layout_below="@+id/tv4"
@@ -77,6 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Laki-Laki"
+                android:fontFamily="@font/poppins_regular"
                 />
 
             <RadioButton
@@ -84,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:text="Perempuan"
                 android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_regular"
                 />
         </LinearLayout>
     </RadioGroup>
@@ -95,35 +104,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Alamat"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"/>
     <EditText
         android:id="@+id/etAlamat"
         android:layout_below="@+id/tv5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular">
     </EditText>
 
     <Button
         android:id="@+id/btnSimpan"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Simpan"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:drawableRight="@drawable/baseline_check_24"
-        android:drawableTint="@color/success"
-        android:textColor="@color/success"/>
-
-    <Button
-        android:id="@+id/btnKembali"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kembali"
-        android:layout_alignParentBottom="true"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
-        android:drawableTint="@color/danger"
-        android:textColor="@color/danger"/>
+        android:backgroundTint="@color/success"
+        android:textColor="@color/white"/>
 
 </RelativeLayout>
